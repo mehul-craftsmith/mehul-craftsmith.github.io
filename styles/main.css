@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("OpenSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url("OpenSans-ExtraBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("OpenSans-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-LightItalic';
+  src: url("OpenSans-LightItalic.ttf") format("truetype"); }
+.bold {
+  font-family: 'OpenSans-Bold'; }
+
+.regular {
+  font-family: 'OpenSans-Regular'; }
+
+.light {
+  font-family: 'OpenSans-Light'; }
+
+.italic {
+  font-family: 'OpenSans-Italic'; }
+
+.lightItalic {
+  font-family: 'OpenSans-LightItalic'; }
+
+.main-heading {
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 50px;
+  color: #312C32; }
+
+.sub-heading {
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 36px;
+  color: #98DAFC;
+  margin-bottom: 30px; }
+
+.para {
+  font-family: 'OpenSans-Regular';
+  font-size: 18px;
+  color: #7F7F7F;
+  margin-bottom: 0px;
+  margin-top: 10px; }
+
+.list {
+  padding-left: 0px;
+  list-style-type: none; }
+
+.label {
+  font-family: 'OpenSans-Bold';
+  color: #4E4E4E;
+  font-size: 30px;
+  padding: 0px; }
+
+.sub-label {
+  font-family: 'OpenSans-Regular';
+  color: #7F7F7F;
+  font-size: 18px; }
+
+.duration {
+  font-family: 'OpenSans-Regular';
+  color: #7F7F7F;
+  font-size: 12px; }
+
+.f-16 {
+  font-size: 16px; }
+
+.ta-center {
+  text-align: center; }
+
+.fl-left {
+  float: left; }
+
+.progress {
+  margin-bottom: 0px;
+  margin-top: 5px; }
+
+.no-gutter {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.pl-0 {
+  padding-left: 0px; }
+
+.m-pl-15 {
+  padding-left: 15px; }
+
+.intro-section, .skills-section, .projects-section, .about-section {
+  margin-top: 60px; }
+
+.intro-section .dp1 {
+  margin-top: 20px; }
+
+.skills-section .single-skill {
+  margin-bottom: 30px; }
+.skills-section .label {
+  padding: 0px; }
+
+.projects-section .single-exp {
+  margin-top: 30px; }
+.projects-section .project-list {
+  display: inline-flex; }
+  .projects-section .project-list a, .projects-section .project-list a:hover, .projects-section .project-list a:focus {
+    text-decoration: none; }
+  .projects-section .project-list .single-project {
+    height: 125px;
+    width: 220px;
+    background: #312C32;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer; }
+    .projects-section .project-list .single-project .periodic-table-text .bold {
+      font-size: 16px; }
+    .projects-section .project-list .single-project .periodic-table-text .light {
+      font-size: 16px;
+      display: block; }
+    .projects-section .project-list .single-project:hover {
+      opacity: 0.8; }
+  .projects-section .project-list .over-text {
+    margin-top: -30px;
+    color: #FFFFFF; }
+  .projects-section .project-list .under-text {
+    padding-top: 20px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    font-size: 30px; }
+  .projects-section .project-list .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+
+.events-section {
+  margin-top: 60px;
+  padding-bottom: 60px; }
+
+@media screen and (max-width: 767px) {
+  .dp1 {
+    width: 100%;
+    height: 250px; }
+
+  .dp3 {
+    margin-bottom: 20px; }
+
+  .label {
+    font-size: 18px; }
+
+  .sub-heading {
+    font-size: 22px; }
+
+  .skills-section .label {
+    font-size: 18px; }
+
+  .sub-label {
+    font-size: 12px; }
+
+  .para {
+    font-size: 12px; }
+
+  .intro-section, .skills-section, .projects-section, .about-section {
+    margin-top: 20px; }
+
+  #contactMeModal input {
+    padding: 10px 25px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    margin-bottom: 10px; }
+
+  .work-together-btn {
+    width: 85%; } }
+
+/*# sourceMappingURL=main.css.map */
