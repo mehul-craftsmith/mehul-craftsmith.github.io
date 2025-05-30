@@ -54,45 +54,6 @@
             .duration-txt {
                 text-transform: uppercase;
             }
-
-            /* View as options */
-            .view-as-wrap {
-                width: fit-content;
-                margin: 0px auto;
-                margin-top: 5em;
-                margin-bottom: 5em;
-            }
-            .view-as-options-list {
-                display: flex;
-                gap: 1em;
-                padding-left: 0em;
-                margin-top: 0em;
-                margin-bottom: 0em;
-            }
-            .view-as-options-list {
-                display: inline-flex;
-                list-style-type: none;
-            }
-            .view-as-options-list button {
-                background: none;
-                padding: 0.5em 1.25em;
-                color: #a6a6a6;
-                border: 1px solid #fff;
-            }
-            .view-as-options-list li .tab-button:hover,
-            .view-as-options-list li .tab-button.active {
-                border: 1px solid #a6a6a6;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            /* Tabs */
-            .tab-content {
-                display: none;
-            }
-            .tab-content.active {
-                display: block;
-            }
         </style>
     </head>
     <body>
@@ -112,21 +73,6 @@
                 for 3 years and by attempting building a business of my own. But I have been consistent in those pursuits.
             </p>
 
-            <div class="view-as-wrap" >
-                <h6>View as</h6>
-                <ul class="view-as-options-list" >
-                    <li>
-                        <button class="tab-button active" data-tab="tab1" >Timeline</button>
-                    </li>
-                    <li>
-                        <button class="tab-button" data-tab="tab2" >Duration</button>
-                    </li>
-                    <li>
-                        <button class="tab-button" data-tab="tab3" >Organisation</button>
-                    </li>
-                </ul>
-            </div>
-
             <!-- Tabs -->
             <div class="tab-content active" id="tab1">
                 <h4 class="duration-txt" >July 2015</h4>
@@ -142,26 +88,5 @@
             </div>
 
         </div>
-        <script>
-            const buttons = document.querySelectorAll('.tab-button');
-            const contents = document.querySelectorAll('.tab-content');
-            buttons.forEach(button => {
-                    button.addEventListener('click', () => {
-
-                    // Remove active class from all buttons
-                    buttons.forEach(btn => btn.classList.remove('active'));
-
-                    // Hide all content
-                    contents.forEach(content => content.classList.remove('active'));
-
-                    // Add active class to clicked button
-                    button.classList.add('active');
-
-                    // Show corresponding tab content
-                    const tabId = button.getAttribute('data-tab');
-                    document.getElementById(tabId).classList.add('active');
-                });
-            });
-        </script>
     </body>
 </html>

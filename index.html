@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mehul Craftsmith</title>
-</head>
-<body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mehul Craftsmith</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<link href="index.css" rel="stylesheet" />
+	</head>
+	<body>
+
+		<div class="navbar" >
+			<h1 class="main-heading" >Mehul Craftsmith</h1>
+			<p class="para-type1" >
+				Feel free to reach me at<br/>
+				<a href="mailto:mehul.craftsmith@gmail.com" >mehul.craftsmith@gmail.com</a>
+			</p>
+		</div>
+
+		<!-- Work experience page -->
+		<div class="portfolio-page ta-center" >
+			<h2 class="page-heading" >My Work Experience</h2>
+			<h2 class="page-heading page-sub-heading" >In Detail</h2>
+
+			<div class="content1" >
+				<h5>TL;DR</h5>
+				<ul>
+					<li>I have no gaps in my work experience.</li>
+					<li>I am on great terms with all my previous employers.</li>
+				</ul>
+				<h5>EXPLANATION</h5>
+				<p>I have certainly taken the less traveled path by studying philosophy for 3 years and by attempting a business of my own.</p>
+				<p>But I have been consistent in those pursuits and they have only enhanced my tech skills.</p>
+			</div>
+		</div>
+
+		<!-- View as section -->
+		<div class="view-as-wrap" >
+			<h6>Arrange by</h6>
+			<ul class="view-as-options-list" >
+				<li>
+					<button class="tab-button active" data-tab="tab1" >Companies</button>
+				</li>
+				<li>
+					<button class="tab-button" data-tab="tab2" >Calendar</button>
+				</li>
+				<li>
+					<button class="tab-button" data-tab="tab3" >Duration</button>
+				</li>
+			</ul>
+		</div>
+		<!-- end View as section -->
+
+		<!-- end Work experience page -->
 
 
+		<!-- Media section
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGoogleDeveloperGroupMumbai%2Fposts%2F1313794508739368%3A0&width=500" width="500" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvigourfest%2Fphotos%2Fa.667101336643597.1073741826.475065742513825%2F667103239976740%2F%3Ftype%3D3&width=500" width="500" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FVidyalankar.VSIT%2Fphotos%2Fa.10153320570046492%2F10153320570196492%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		end Media section -->
+
+		<script>
+            const buttons = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+            buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+
+                    // Hide all content
+                    contents.forEach(content => content.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    // Show corresponding tab content
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        </script>
 
 
-<!-- Media section
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGoogleDeveloperGroupMumbai%2Fposts%2F1313794508739368%3A0&width=500" width="500" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvigourfest%2Fphotos%2Fa.667101336643597.1073741826.475065742513825%2F667103239976740%2F%3Ftype%3D3&width=500" width="500" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FVidyalankar.VSIT%2Fphotos%2Fa.10153320570046492%2F10153320570196492%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-end Media section -->
-
-</body>
+	</body>
 </html>
