@@ -1,0 +1,12 @@
+%white-block {
+    width: fit-content;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.company-info-block {
+    @extend %white-block;
+}
+.duration-block {
+    @extend %white-block;
+}

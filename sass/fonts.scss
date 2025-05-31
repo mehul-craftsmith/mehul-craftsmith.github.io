@@ -1,0 +1,33 @@
+@use 'colors' as colors;
+
+.main-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: colors.$grey3;
+    margin: 1.5em 0em;
+}
+.page-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+.page-sub-heading {
+    font-size: 18px;
+    margin-top: 0em;
+}
+.para-type1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: colors.$grey3;
+    text-align: right;
+
+    a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: colors.$grey3;
+    }
+}

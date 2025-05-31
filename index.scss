@@ -1,112 +1,57 @@
-$grey1: #545454;
-$grey2: #a6a6a6;
-
-
-/* Normalise the defaults */
-body {
-    margin: 0px;
-}
+@use 'sass/colors' as colors;
+@use 'sass/common.scss';
+@use 'sass/navbar.scss';
+@use 'sass/tabs.scss';
+@use 'sass/fonts.scss';
+@use 'sass/blocks.scss';
 
 
 /* Pages */
 .portfolio-page {
     padding-top: 3em;
+    padding-bottom: 12em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-
-/* Navbar */
-.navbar {
-    border-bottom: 1px solid #d9d9d9;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    align-items: center;
-}
-
-
-/* Tabs */
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-
-
-/* Fonts */
-.main-heading {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bolder;
-    font-style: normal;
-    font-size: 22px;
-    color: #737373;
-    margin: 1.5em 0em;
-}
-.page-heading {
-    font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 0.5em;
-}
-.page-sub-heading {
-    font-size: 18px;
-    margin-top: 0em;
-}
-.para-type1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #737373;
-    text-align: right;
-}
-.para-type1 a {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #737373;
-}
-
-/* Common */
-.ta-center {
-    text-align: center;
-}
 
 /* Components */
 .content1 {
-    padding-left: 10%;
-    padding-right: 10%;
     text-align: left;
-}
-.content1 h5 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin-top: 3em;
-    margin-bottom: 0.25em;
-}
-.content1 p {
-    font-family: "Montserrat", sans-serif;
-    color: $grey1;
-    margin-top: 0em;
-    margin-bottom: 0.25em;
-}
-.content1 ul {
-    font-family: "Montserrat", sans-serif;
-    color: $grey1;
-    padding-left: 1em;
-    margin-top: 0em;
+
+    h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin-top: 3em;
+        margin-bottom: 0.25em;
+    }
+    p {
+        font-family: "Montserrat", sans-serif;
+        color: colors.$grey1;
+        margin-top: 0em;
+        margin-bottom: 0.25em;
+    }
+    ul {
+        font-family: "Montserrat", sans-serif;
+        color: colors.$grey1;
+        padding-left: 1em;
+        margin-top: 0em;
+    }
 }
 
 .view-as-wrap {
     width: fit-content;
     margin: 0px auto;
     margin-top: 4em;
+    margin-bottom: 4em;
 
     h6 {
         font-family: "Montserrat", sans-serif;
-        color: $grey2;
+        color: colors.$grey2;
         text-transform: uppercase;
         margin-left: 4.5em;
+        margin-top: 0em;
         margin-bottom: 0em;
     }
 }
@@ -114,12 +59,13 @@ body {
     display: inline-flex;
     list-style-type: none;
     padding: 0em;
-    margin-top: 0.5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
     margin-left: 3em;
 
     button {
         font-family: "Montserrat", sans-serif;
-        color: $grey2;
+        color: colors.$grey2;
         background: none;
         border: 1px solid #fff;
         border-radius: 4px;
@@ -138,7 +84,7 @@ body {
             cursor: pointer;
 
             button {
-                border: 1px solid $grey2;            
+                border: 1px solid colors.$grey2;            
             }
         }
         &:hover {
@@ -152,7 +98,7 @@ body {
         padding: 1em;
 
         &:hover {
-            border: 1px solid $grey2;
+            border: 1px solid colors.$grey2;
             border-radius: 4px;
             cursor: pointer;
         }
@@ -161,7 +107,7 @@ body {
         font-family: "Montserrat", sans-serif;
         font-size: 12px;
         color: #fff;
-        background-color: $grey2;
+        background-color: colors.$grey2;
         position: absolute;
         padding: 1em;
         border-radius: 4px;
@@ -171,6 +117,4 @@ body {
 }
 
 
-.d-none {
-    display: none;
-}
+

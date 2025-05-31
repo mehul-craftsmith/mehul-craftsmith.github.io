@@ -1,14 +1,11 @@
-/* Normalise the defaults */
-body {
-  margin: 0px;
+.ta-center {
+  text-align: center;
 }
 
-/* Pages */
-.portfolio-page {
-  padding-top: 3em;
+.d-none {
+  display: none;
 }
 
-/* Navbar */
 .navbar {
   border-bottom: 1px solid #d9d9d9;
   display: flex;
@@ -18,7 +15,6 @@ body {
   align-items: center;
 }
 
-/* Tabs */
 .tab-content {
   display: none;
 }
@@ -27,13 +23,12 @@ body {
   display: block;
 }
 
-/* Fonts */
 .main-heading {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bolder;
-  font-style: normal;
   font-size: 22px;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
   color: #737373;
   margin: 1.5em 0em;
 }
@@ -56,25 +51,30 @@ body {
   color: #737373;
   text-align: right;
 }
-
 .para-type1 a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #737373;
 }
 
-/* Common */
-.ta-center {
-  text-align: center;
+.duration-block, .company-info-block {
+  width: fit-content;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+/* Pages */
+.portfolio-page {
+  padding-top: 3em;
+  padding-bottom: 12em;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Components */
 .content1 {
-  padding-left: 10%;
-  padding-right: 10%;
   text-align: left;
 }
-
 .content1 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -82,14 +82,12 @@ body {
   margin-top: 3em;
   margin-bottom: 0.25em;
 }
-
 .content1 p {
   font-family: "Montserrat", sans-serif;
   color: #545454;
   margin-top: 0em;
   margin-bottom: 0.25em;
 }
-
 .content1 ul {
   font-family: "Montserrat", sans-serif;
   color: #545454;
@@ -101,12 +99,14 @@ body {
   width: fit-content;
   margin: 0px auto;
   margin-top: 4em;
+  margin-bottom: 4em;
 }
 .view-as-wrap h6 {
   font-family: "Montserrat", sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
   margin-left: 4.5em;
+  margin-top: 0em;
   margin-bottom: 0em;
 }
 
@@ -114,7 +114,8 @@ body {
   display: inline-flex;
   list-style-type: none;
   padding: 0em;
-  margin-top: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
   margin-left: 3em;
 }
 .view-as-options-list button {
@@ -161,10 +162,6 @@ body {
   border-radius: 4px;
   width: min-content;
   align-content: center;
-}
-
-.d-none {
-  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
