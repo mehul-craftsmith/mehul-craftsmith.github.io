@@ -106,7 +106,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
-  margin-left: 6em;
+  margin-left: 4.5em;
   margin-bottom: 0em;
 }
 
@@ -115,7 +115,7 @@ body {
   list-style-type: none;
   padding: 0em;
   margin-top: 0.5em;
-  margin-left: 4em;
+  margin-left: 3em;
 }
 .view-as-options-list button {
   font-family: "Montserrat", sans-serif;
@@ -126,14 +126,45 @@ body {
   cursor: pointer;
   margin-right: 2em;
 }
+.view-as-options-list .tab-item p {
+  display: none;
+  width: 110px;
+  height: 40px;
+  margin-top: 0.25em;
+}
+.view-as-options-list .tab-item.active {
+  border-radius: 4px;
+  cursor: pointer;
+}
+.view-as-options-list .tab-item.active button {
+  border: 1px solid #a6a6a6;
+}
+.view-as-options-list .tab-item:hover p {
+  display: block;
+}
 .view-as-options-list .tab-button {
   font-size: 12px;
   padding: 1em;
 }
-.view-as-options-list .tab-button:hover, .view-as-options-list .tab-button.active {
+.view-as-options-list .tab-button:hover {
   border: 1px solid #a6a6a6;
   border-radius: 4px;
   cursor: pointer;
+}
+.view-as-options-list p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #a6a6a6;
+  position: absolute;
+  padding: 1em;
+  border-radius: 4px;
+  width: min-content;
+  align-content: center;
+}
+
+.d-none {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

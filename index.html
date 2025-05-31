@@ -27,7 +27,6 @@
 		<div class="portfolio-page ta-center" >
 			<h2 class="page-heading" >My Work Experience</h2>
 			<h2 class="page-heading page-sub-heading" >In Detail</h2>
-
 			<div class="content1" >
 				<h5>TL;DR</h5>
 				<ul>
@@ -44,18 +43,36 @@
 		<div class="view-as-wrap" >
 			<h6>Arrange by</h6>
 			<ul class="view-as-options-list" >
-				<li>
-					<button class="tab-button active" data-tab="tab1" >Companies</button>
+				<li class="tab-item active" data-tab="tab1" >
+					<button class="tab-button" >Companies</button>
+					<p>Explains my work accomplishments in detail</p>
 				</li>
-				<li>
-					<button class="tab-button" data-tab="tab2" >Calendar</button>
+				<li class="tab-item" data-tab="tab2" >
+					<button class="tab-button" >Calendar</button>
+					<p>Explains the 'seeming' gaps</p>
 				</li>
-				<li>
-					<button class="tab-button" data-tab="tab3" >Duration</button>
+				<li class="tab-item" data-tab="tab3" >
+					<button class="tab-button" >Duration</button>
+					<p>Text-based form of Calendar arrangement</p>
 				</li>
 			</ul>
 		</div>
 		<!-- end View as section -->
+
+		<!-- Tabs -->
+		<div class="tab-content active" id="tab1">
+			<h4 class="duration-txt" >July 2011</h4>
+			<p class="timeline-desc-txt" >Graduated in Bachelor of Science in Information Technology</p>
+		</div>
+		<div class="tab-content" id="tab2">
+			<h4 class="duration-txt" >July 2012 - September 2016</h4>
+			<p class="timeline-desc-txt" >Graduated in Bachelor of Science in Information Technology</p>
+		</div>
+		<div class="tab-content" id="tab3">
+			<h4 class="duration-txt" >September 2013 - </h4>
+			<p class="timeline-desc-txt" >Graduated in Bachelor of Science in Information Technology</p>
+		</div>
+		<!-- end Tabs -->
 
 		<!-- end Work experience page -->
 
@@ -66,28 +83,29 @@
 		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FVidyalankar.VSIT%2Fphotos%2Fa.10153320570046492%2F10153320570196492%2F%3Ftype%3D3&show_text=true&width=500" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 		end Media section -->
 
+
 		<script>
-            const buttons = document.querySelectorAll('.tab-button');
+            const tabItem = document.querySelectorAll('.tab-item');
             const contents = document.querySelectorAll('.tab-content');
-            buttons.forEach(button => {
-                    button.addEventListener('click', () => {
+            tabItem.forEach(singleTab => {
+                singleTab.addEventListener('click', () => {
 
                     // Remove active class from all buttons
-                    buttons.forEach(btn => btn.classList.remove('active'));
+                    tabItem.forEach(tab => tab.classList.remove('active'));
 
                     // Hide all content
                     contents.forEach(content => content.classList.remove('active'));
 
                     // Add active class to clicked button
-                    button.classList.add('active');
+                    const parentLi = singleTab.closest('li');
+			        if (parentLi) parentLi.classList.add('active');
 
                     // Show corresponding tab content
-                    const tabId = button.getAttribute('data-tab');
+                    const tabId = singleTab.getAttribute('data-tab');
                     document.getElementById(tabId).classList.add('active');
+
                 });
             });
         </script>
-
-
 	</body>
 </html>
