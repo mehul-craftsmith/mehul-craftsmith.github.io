@@ -6,6 +6,12 @@
 @use 'sass/blocks.scss';
 
 
+/* For preventing accidental bad printing */
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Montserrat", sans-serif;
+}
+
+
 /* Pages */
 .portfolio-page {
     padding-top: 3em;
@@ -52,7 +58,7 @@
         text-transform: uppercase;
         margin-left: 4.5em;
         margin-top: 0em;
-        margin-bottom: 0em;
+        margin-bottom: 0.25em;
     }
 }
 .view-as-options-list {
