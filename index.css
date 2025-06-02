@@ -158,6 +158,11 @@
   padding-right: 35px;
 }
 
+.logo-wrap.blue, .logo-wrap.green {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 .logo-wrap {
   text-align: center;
   background-color: #fff3f3;
@@ -167,6 +172,34 @@
   width: 60%;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+.logo-wrap.green {
+  background: rgba(11, 255, 104, 0.1215686275);
+}
+.logo-wrap.ocl-green {
+  background: rgba(144, 255, 124, 0.32);
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+}
+.logo-wrap.blue {
+  background: rgba(0, 106, 159, 0.97);
+}
+.logo-wrap.light-blue {
+  background: rgba(190, 233, 255, 0.97);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.logo-wrap.light-blue h4 {
+  font-size: 20px;
+  margin-top: 0em;
+}
+.logo-wrap.orange {
+  background: rgba(232, 141, 66, 0.48);
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+.logo-wrap.orange img {
+  width: 25%;
 }
 
 /* For preventing accidental bad printing */

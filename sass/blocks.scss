@@ -105,6 +105,10 @@
 }
 
 
+%logo-padding {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
 .logo-wrap {
     text-align: center;
     background-color: #fff3f3;
@@ -114,5 +118,37 @@
         width: 60%;
         padding-top: 1.5em;
         padding-bottom: 1.5em;
+    }
+    &.green {
+        background:#0bff681f;
+        @extend %logo-padding;
+    }
+    &.ocl-green {
+        background: rgb(144 255 124 / 32%);
+        padding-top: 0.15em;
+        padding-bottom: 0.15em;
+    }
+    &.blue {
+        background:rgb(0 106 159 / 97%);
+        @extend %logo-padding;
+    }
+    &.light-blue {
+        background: rgb(190 233 255 / 97%);
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        h4 {
+            font-size: 20px;
+            margin-top: 0em;
+        }
+    }
+    &.orange {
+        background: rgb(232 141 66 / 48%);
+        padding-top: 0em;
+        padding-bottom: 0em;
+
+        img {
+            width: 25%;
+        }
     }
 }
