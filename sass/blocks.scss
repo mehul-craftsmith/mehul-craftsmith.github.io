@@ -4,6 +4,7 @@
 .companies-tab {
     width: 70%;
     margin: 0px auto;
+    margin-top: 5em;
 
     h4 {
         font-family: "Montserrat", sans-serif;
@@ -68,6 +69,7 @@
         width: 25px;
     }
     .company-name {
+        padding-left: 35px;
         margin-top: 3em;
     }
     .aspect-heading {
@@ -88,6 +90,18 @@
         border-radius: 4px;
         padding: 0.5em;
     }
+
+    &.ngo-wrap {
+        padding-bottom: 1em;
+        
+        .company-name {
+            padding-left: 0em;
+            margin-top: 2em;
+        }
+        .project-details {
+            padding-left: 0em;
+        }
+    }
 }
 .details-sub-head-wrap {
     display: flex;
@@ -97,6 +111,10 @@
     h5 {
         padding-left: 10px;
         margin-top: 0.45em;
+    }
+    img.skill-up-img {
+        height: 20px;
+        width: 20px;
     }
 }
 .project-details {

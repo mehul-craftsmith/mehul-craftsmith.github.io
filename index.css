@@ -60,6 +60,7 @@
 .companies-tab {
   width: 70%;
   margin: 0px auto;
+  margin-top: 5em;
 }
 .companies-tab h4 {
   font-family: "Montserrat", sans-serif;
@@ -122,6 +123,7 @@
   width: 25px;
 }
 .details-block .company-name {
+  padding-left: 35px;
   margin-top: 3em;
 }
 .details-block .aspect-heading {
@@ -142,6 +144,16 @@
   border-radius: 4px;
   padding: 0.5em;
 }
+.details-block.ngo-wrap {
+  padding-bottom: 1em;
+}
+.details-block.ngo-wrap .company-name {
+  padding-left: 0em;
+  margin-top: 2em;
+}
+.details-block.ngo-wrap .project-details {
+  padding-left: 0em;
+}
 
 .details-sub-head-wrap {
   display: flex;
@@ -151,6 +163,10 @@
 .details-sub-head-wrap h5 {
   padding-left: 10px;
   margin-top: 0.45em;
+}
+.details-sub-head-wrap img.skill-up-img {
+  height: 20px;
+  width: 20px;
 }
 
 .project-details {
@@ -306,6 +322,53 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
   width: min-content;
   align-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+  .portfolio-page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .duration-block {
+    width: 25.5%;
+  }
+  .company-content-block {
+    display: block;
+    width: 74%;
+  }
+  .companies-tab {
+    width: 100%;
+  }
+  .logo-block {
+    width: 85%;
+    margin: 0px auto;
+  }
+  .details-block {
+    width: 100%;
+  }
+  .details-block .company-name {
+    padding-left: 25px;
+  }
+  .project-details {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .details-sub-head-wrap {
+    padding-left: 25px;
+  }
+  .details-block.ngo-wrap .project-details {
+    padding-left: 20px;
+  }
+  .details-block.ngo-wrap .company-name {
+    padding-left: 20px;
+  }
+  .para-type1 {
+    font-size: 12px;
+  }
+  .para-type1 a {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

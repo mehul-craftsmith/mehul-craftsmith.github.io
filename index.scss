@@ -124,3 +124,56 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
+@media (max-width: 768px) {
+
+    /* Styles for tablets and smaller devices */
+
+    .portfolio-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .duration-block {
+        width: 25.5%;
+    }
+    .company-content-block {
+        display: block;
+        width: 74%;
+    }
+    .companies-tab {
+        width: 100%;
+    }
+    .logo-block {
+        width: 85%;
+        margin: 0px auto;
+    }
+    .details-block {
+        width: 100%;
+
+        .company-name {
+            padding-left: 25px;
+        }
+    }
+    .project-details {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .details-sub-head-wrap {
+        padding-left: 25px;
+    }
+    .details-block.ngo-wrap {
+        .project-details {
+            padding-left: 20px;
+        }
+        .company-name {
+            padding-left: 20px;
+        }
+    }
+    .para-type1 {
+        font-size: 12px;
+
+        a {
+            font-size: 11px;
+        }
+    }
+
+}
