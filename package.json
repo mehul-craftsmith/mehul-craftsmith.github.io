@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build:pug": "pug index1.pug"
+    "build:pug": "pug index.pug"
   },
   "devDependencies": {
     "pug": "^3.0.3",
