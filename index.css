@@ -108,6 +108,7 @@
 }
 .details-block h4 {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   color: #545454;
   margin-top: 1.5em;
   margin-bottom: 0.1em;
@@ -118,10 +119,6 @@
 .details-block p {
   margin-top: 1em;
 }
-.details-block img {
-  height: 25px;
-  width: 25px;
-}
 .details-block .company-name {
   padding-left: 35px;
   margin-top: 3em;
@@ -129,16 +126,17 @@
 .details-block .aspect-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 14px;
   color: #000;
 }
 .details-block .role-description-para {
-  font-size: 13px;
+  font-size: 15px;
+  color: #2f2f2f;
   margin-top: 0.25em;
   margin-bottom: 1em;
 }
 .details-block .extra-info {
-  font-size: 12px;
+  font-size: 14px;
   background: #a6a6a6;
   color: #fff;
   border-radius: 4px;
@@ -161,8 +159,15 @@
   margin-top: 1.5em;
 }
 .details-sub-head-wrap h5 {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 0em;
   padding-left: 10px;
   margin-top: 0.45em;
+}
+.details-sub-head-wrap img {
+  height: 25px;
+  width: 25px;
 }
 .details-sub-head-wrap img.skill-up-img {
   height: 20px;
@@ -322,6 +327,12 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
   width: min-content;
   align-content: center;
+}
+
+/*  */
+.heading-icons {
+  height: 25px;
+  width: 25px;
 }
 
 @media (max-width: 768px) {
