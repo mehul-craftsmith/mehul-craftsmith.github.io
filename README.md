@@ -5,7 +5,11 @@
 # TODO
 1. Add link to X
 2. Make "skills" into smaller cards
+- CredR card, Rapid prototyping section
 3. Utilize the column under logos
+4. Add staff central
+5. Add Deeplearning certificates
+6. Add Maker's Asylum course (Hobby section)
 
 
 
