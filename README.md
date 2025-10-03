@@ -1,6 +1,15 @@
 
 
 
+
+# TODO
+1. Add link to X
+2. Make "skills" into smaller cards
+3. Utilize the column under logos
+
+
+
+
 # Run all of these together, for best effect:
 
 # To run server, use:
