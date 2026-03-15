@@ -1,6 +1,18 @@
 @use 'colors' as colors;
 
 
+// Common
+.pd-top-0 {
+    padding-top: 0em;
+}
+.pd-btm-0 {
+    padding-bottom: 0em;
+}
+.wd-50p {
+    width: 50%;
+}
+
+
 .companies-tab {
     width: 70%;
     margin: 0px auto;
@@ -164,6 +176,11 @@
             font-size: 20px;
             margin-top: 0em;
         }
+    }
+    &.off-grey {
+        background: #efefef;
+        padding-top: 0em;
+        padding-bottom: 0em;
     }
     &.orange {
         background: rgb(232 141 66 / 48%);
