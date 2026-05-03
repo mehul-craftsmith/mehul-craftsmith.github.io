@@ -245,6 +245,15 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Common */
+.ta-center {
+  text-align: center;
+}
+
+.lst-none {
+  list-style-type: none;
+}
+
 /* Pages */
 .portfolio-page {
   padding-top: 3em;
@@ -254,29 +263,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Components */
-.content1 {
-  text-align: left;
-}
-.content1 h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin-top: 3em;
-  margin-bottom: 0.25em;
-}
-.content1 p {
-  font-family: "Montserrat", sans-serif;
-  color: #545454;
-  margin-top: 0em;
-  margin-bottom: 0.25em;
-}
-.content1 ul {
-  font-family: "Montserrat", sans-serif;
-  color: #545454;
-  padding-left: 1em;
-  margin-top: 0em;
-}
-
 .view-as-wrap {
   width: fit-content;
   margin: 0px auto;
