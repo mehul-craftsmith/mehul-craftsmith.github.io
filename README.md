@@ -11,6 +11,7 @@
 4. Add staff central
 5. Add Deeplearning certificates
 6. Add Maker's Asylum course (Hobby section)
+    - Add images, potentially to all other sections too
 7. Add Kubernetes, Docker to Resume
 
 
@@ -20,13 +21,15 @@
 
 # To run server, use:
 browser-sync start --server --files="*.*"
+(inside index directory)
 
 # To compile PUG, use:
 npx pug index.pug --watch
+(inside index directory)
 
 # To compile SASS, use:
 sass index.scss:index.css --watch
-
+(inside sass directory)
 
 
 # Keeping links to social media mentions as backup

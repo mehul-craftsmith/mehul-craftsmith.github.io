@@ -115,6 +115,21 @@ h1, h2, h3, h4, h5, h6, p {
     width: 25px;
 }
 
+.project-details {
+    a.cv-link {
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        background: rgba(0, 169, 255, 0.97);
+        padding: 0.25em 0.55em;
+        float: right;
+        border-radius: 4px;
+    }
+}
+
+
 
 @media (max-width: 768px) {
 
