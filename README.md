@@ -17,6 +17,16 @@
 
 
 
+# For publishing
+ssh-add -D
+ssh-add -l
+ssh-add ~/.ssh/cr
+git push origin <branch-name>
+ssh-add ~/.ssh/cr
+
+
+
+
 # Run all of these together, for best effect:
 
 # To run server, use:
