@@ -158,6 +158,10 @@
         background:#0bff681f;
         @extend %logo-padding;
     }
+    &.booklifter {
+        min-height: 100px;
+        padding-top: 1.7em;
+    }
     &.ocl-green {
         background: rgb(144 255 124 / 32%);
         padding-top: 0.15em;
